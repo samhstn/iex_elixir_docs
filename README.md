@@ -8,7 +8,7 @@ Wouldn't it be great if you could quickly get that information from your command
 
 Copy this `.iex.exs` file into your `~` directory
 ```bash
-curl tbd > ~/.iex.exs
+curl https://cdn.rawgit.com/shouston3/iex_elixir_docs/1ff5f62f/.iex.exs > ~/.iex.exs
 ```
 
 ### Use
