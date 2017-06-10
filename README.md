@@ -6,7 +6,7 @@ Wouldn't it be great if you could quickly get that information from your command
 
 ## Quick start
 
-Download the provided `.iex.exs` configuration file to your home directory.
+Download the provided [`.iex.exs` file](.iex.exs) to your home directory.
 
 ```bash
 curl -sSL https://git.io/vHyeX >> ~/.iex.exs
