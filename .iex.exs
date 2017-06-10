@@ -1,6 +1,5 @@
 defmodule Functions do
-  def unctions(module),
-    do: module.__info__(:functions)
+  def unctions(module), do: module.__info__(:functions)
 end
 
 defmodule Modules do
@@ -8,6 +7,7 @@ defmodule Modules do
     :code.all_loaded
     |> Enum.map(&elem(&1, 0))
     |> Enum.filter(&(Regex.match?(~r/[A-Z]/, Atom.to_string(&1))))
+    |> Enum.sort
   end
 end
 
