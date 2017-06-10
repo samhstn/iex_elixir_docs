@@ -9,7 +9,7 @@ Wouldn't it be great if you could quickly get that information from your command
 Download the provided `.iex.exs` configuration file to your home directory.
 
 ```bash
-curl -sSL https://cdn.rawgit.com/shouston3/iex_elixir_docs/1ff5f62f/.iex.exs >> ~/.iex.exs
+curl -sSL https://git.io/vHyeX >> ~/.iex.exs
 ```
 
 ## Usage
