@@ -1,44 +1,39 @@
 # iex_elixir_docs
 
-When programming in Elixir the [Hex Docs](https://hexdocs.pm/elixir) will be a very valuable resource
+When programming in Elixir, the [Hex Docs](https://hexdocs.pm/elixir) are a very valuable resource.
 
-Wouldn't it be great if you could quickly get that information from your command line
+Wouldn't it be great if you could quickly get that information from your command line?
 
-### Quick start
+## Quick start
 
-Copy this `.iex.exs` file into your `~` directory
+Download the provided [`.iex.exs` file](.iex.exs) to your home directory.
+
 ```bash
-curl https://cdn.rawgit.com/shouston3/iex_elixir_docs/1ff5f62f/.iex.exs > ~/.iex.exs
+curl -sSL https://git.io/vHyeX >> ~/.iex.exs
 ```
 
-### Use
+## Usage
 
-First start up the `iex` shell:
-iex
+First start the Elixir's interactive shell `iex`.
 
-To see all modules elixir has to offer, run:
-```bash
+**List all modules in Elixir's standard library**
+
+```elixir
 iex> M.odules
 ```
 
-To see all functions in a module, run:
-```bash
-iex> F.unctions <Module>
-```
+**List all functions in a module**
 
-E.g.
-
-```bash
+```elixir
+iex> F.unctions Module
 iex> F.unctions Enum
 ```
 
-To get the docs for a function, run:
-```bash
-iex> h <Module>.<function>
-```
+**Get the docs for a module or function\***  
+<sup>\* This behaviour is built into `iex` and provided by the `IEx.Helpers` module.</sup>
 
-E.g.
-
-```bash
+```elixir
+iex> h Enum
 iex> h Enum.map
+iex> h Enum.map/2
 ```
